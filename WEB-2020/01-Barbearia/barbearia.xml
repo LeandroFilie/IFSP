@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<agendamentos>
+    <agendamento>
+        <nome>Julia</nome>
+        <email>julia@julia.com</email>
+        <telefone>1111-1111</telefone>
+        <data>2020-02-05</data>
+        <hora>19:00</hora>
+    </agendamento>
+<agendamento><nome>Julia</nome><email>julia@julia.com</email><telefone>1111-1111</telefone><data>2020-02-04</data><hora>11:11</hora></agendamento><agendamento><nome>Julia</nome><email>julia@julia.com</email><telefone>1111-1111</telefone><data>2020-02-05</data><hora>18:00</hora></agendamento><agendamento><nome>Julia</nome><email>julia@julia.com</email><telefone>1111-1111</telefone><data>2020-02-06</data><hora>19:00</hora></agendamento><agendamento><nome>Leandro Gomes Filié</nome><email>leandro.gf03@gmail.com</email><telefone>16997279101</telefone><data>2020-02-07</data><hora>07:00</hora></agendamento><agendamento><nome>dhvbs</nome><email>ljdsv</email><telefone>3333-3333</telefone><data>2020-02-07</data><hora>07:00</hora></agendamento></agendamentos>

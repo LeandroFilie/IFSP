@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Soma</title>
+    </head>
+    <script>
+        function calcula(valor1, valor2){
+            soma = parseInt(valor1) + parseInt(valor2);
+            document.getElementById("resultado").value = soma;
+        }
+    </script>
+    <body>
+        <form name="form">
+            <input type="number" name="num1" id="num1" placeholder="Número 1" />
+            +
+            <input type="number" name="num2" id="num2" placeholder="Número 2" />
+            =
+            <input type="number" name="resultado" id="resultado" placeholder="Resultado" readonly="readonly" />
+            <br/><br/>
+            <input type="button" value="Calcular" onclick="calcula(document.form.num1.value, document.form.num2.value)" />
+            <input type="reset" value="Limpar" />
+        </form>
+    </body>
+</html>

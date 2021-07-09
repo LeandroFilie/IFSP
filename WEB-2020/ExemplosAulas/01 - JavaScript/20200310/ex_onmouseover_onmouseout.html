@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <script>
+            function aciona_mouse(valor){
+                document.getElementById("msg").innerHTML = valor;
+            }
+        </script>
+    </head>
+    <body>
+        <div id="msg"></div>
+        <table border="1" onmouseover="aciona_mouse('Entrei na tabela');" onmouseout="aciona_mouse('Sai na tabela');">
+            <tr>
+                <th>Título 1</th><th>Título 2</th><th>Título 3</th>
+            </tr>
+            <tr>
+                <td>Linha 1 coluna 1</td>
+                <td>Linha 1 coluna 2</td>
+                <td>Linha 1 coluna 3</td>
+            </tr>
+            <tr>
+                <td>Linha 2 coluna 1</td>
+                <td>Linha 2 coluna 2</td>
+                <td>Linha 2 coluna 3</td>
+            </tr>
+    </table>
+    </body>
+</html>

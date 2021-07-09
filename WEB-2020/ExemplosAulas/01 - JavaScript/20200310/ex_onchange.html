@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <script>
+            function aciona_troca(valor){
+                alert(valor);
+            }
+        </script>
+    </head>
+    <body>
+        <form name="f">
+            <input type="text" name="x" onchange="aciona_troca(this.value)" /><br/>
+
+            <input type="radio" name="y" value="A" onchange="aciona_troca(this.value)" />A<br/>
+            <input type="radio" name="y" value="B" onchange="aciona_troca(this.value)" />B<br/>
+            <input type="radio" name="y" value="C" onchange="aciona_troca(this.value)" />C<br/>
+
+            <input type="checkbox" name="z" value="M" onchange="aciona_troca(this.value)" />M<br/>
+            <input type="checkbox" name="z" value="N" onchange="aciona_troca(this.value)" />N<br/>
+
+            <textarea name="w" onchange="aciona_troca(this.value)"></textarea><br/>
+        </form>
+    </body>
+</html>

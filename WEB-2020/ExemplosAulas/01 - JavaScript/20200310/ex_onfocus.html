@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <script>
+            function aciona_onfocus(valor){
+                document.getElementById("msg").innerHTML = valor;
+            }
+        </script>
+    </head>
+    <body>
+        <div id="msg"></div>
+        <br/>
+        <form name="f">
+            <input type="text" name="x" onfocus="aciona_onfocus(this.value)" /><br/>
+
+            <select name="z" onfocus="aciona_onfocus(this.value)">
+                <option>A</option>
+                <option>B</option>
+                <option>C</option>
+            </select>
+        </form>
+    </body>
+</html>

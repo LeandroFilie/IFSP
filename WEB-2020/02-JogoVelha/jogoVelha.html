@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Jogo da Velha</title>
+        <style>
+            input{
+                width: 100px;
+                height: 90px;
+                text-align: center;
+                font-size: 50px;
+            }
+            
+        </style>
+        <script>
+            var cont=0;
+            
+            function vez_certa(campo){
+                var valor = campo.value;
+                if(cont%2==0){
+                    if(valor=="X" || valor=="x"){
+                        return true;
+                    }
+                    else{
+                        campo.value = "";
+                        alert("Não é a sua vez!");
+                    }
+                }
+                else{
+                    if(valor=="O" || valor=="o"){
+                        return true;
+                    }
+                    else{
+                        campo.value = "";
+                        alert("Não é a sua vez!");
+                    }
+                }
+                return false;
+            }
+
+            function verifica(campo){
+                var jogador = 0;
+                if(vez_certa(campo)){
+                    if(cont%2==0){
+                        jogador = 1;
+                    }
+                    else{
+                        jogador = 2;
+                    }
+                    cont++;
+                    l1c1 = document.getElementById("11").value;
+                    l1c2 = document.getElementById("12").value;
+                    l1c3 = document.getElementById("13").value;
+                    l2c1 = document.getElementById("21").value;
+                    l2c2 = document.getElementById("22").value;
+                    l2c3 = document.getElementById("23").value;
+                    l3c1 = document.getElementById("31").value;
+                    l3c2 = document.getElementById("32").value;
+                    l3c3 = document.getElementById("33").value;
+
+                    //ganhou em linha
+                    if(l1c1 == l1c2 && l1c2 == l1c3 && l1c3!=""){
+                        alert("Jogador "+jogador+" ganhou!");
+                        
+                    }
+                   else if(l2c1 == l2c2 && l2c2 == l2c3 && l2c3!=""){
+                        alert("Jogador "+jogador+" ganhou!");
+                        
+                    }
+                    else if(l3c1 == l3c2 && l3c2 == l3c3 && l3c3!=""){
+                        alert("Jogador "+jogador+" ganhou!");
+                        
+                    }
+
+                    //ganhou em coluna
+                    else if(l1c1 == l2c1 && l2c1 == l3c1 && l3c1 != ""){
+                        alert("Jogador "+jogador+" ganhou!");
+                    }
+                    else if(l1c2 == l2c2 && l2c2 == l3c2 && l3c2 != ""){
+                        alert("Jogador "+jogador+" ganhou!");
+                    }
+                    else if(l1c3 == l2c3 && l2c3 == l3c3 && l3c3 != ""){
+                        alert("Jogador "+jogador+" ganhou!");
+                    }
+
+                    //ganhou em diagonal
+                    else if(l1c1 == l2c2 && l2c2 == l3c3 && l3c3!=""){
+                        alert("Jogador "+jogador+" ganhou!");
+                    }
+                    else if(l1c3 == l2c2 && l2c2 == l3c1 && l3c1!=""){
+                        alert("Jogador "+jogador+" ganhou!");
+                    }
+                    else if((l1c1 != "") && (l1c2 != "") && (l1c3 != "") && (l2c1 != "") && (l2c2 != "") && (l2c3 != "") && (l3c1 != "") && (l3c2 != "") && (l3c3 != "")){
+                        alert("O jogo empatou!");
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <center><h2>Jogo da Velha</h2>
+        <form name="jogo">
+            <table cellspacing="0">
+                <tr>
+                    <td><input type="text" name="11" id="11" onchange="verifica(this)" maxlength="1" /></td>
+                    <td><input type="text" name="12" id="12" onchange="verifica(this)" maxlength="1" /></td>
+                    <td><input type="text" name="13" id="13" onchange="verifica(this)" maxlength="1" /></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="21" id="21" onchange="verifica(this)" maxlength="1" /></td>
+                    <td><input type="text" name="22" id="22" onchange="verifica(this)" maxlength="1" /></td>
+                    <td><input type="text" name="23" id="23" onchange="verifica(this)" maxlength="1" /></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="31" id="31" onchange="verifica(this)" maxlength="1" /></td>
+                    <td><input type="text" name="32" id="32" onchange="verifica(this)" maxlength="1" /></td>
+                    <td><input type="text" name="33" id="33" onchange="verifica(this)" maxlength="1" /></td>
+                </tr>
+            </table>
+        </form></center>
+    </body>
+</html>

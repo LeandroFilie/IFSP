@@ -1,0 +1,24 @@
+body{
+    min-height: 100vh;
+	background-color: #ededed;
+    background-image: url("../images/1.png");
+}
+
+.login-form {
+	border: 3px solid;
+    margin-top: 25vh;
+    padding: 20px 30px;
+}
+
+.login-form h2{
+    font-size: 1em;
+    margin: 0 0 30px;
+}
+
+input{
+    margin-left: 10px;
+}
+
+button{
+	background-color: black;
+}

@@ -1,0 +1,1 @@
+Texto que foi trafegado de forma assíncrona

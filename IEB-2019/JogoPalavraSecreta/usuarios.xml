@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<usuarios>
+    <dados>
+        <codigo>1</codigo>
+        <nome>Leandro Filié</nome>
+        <email>leandro_gomes2003@hotmail.com</email>
+        <senha>6116afedcb0bc31083935c1c262ff4c9</senha>
+        <pontuacao>210</pontuacao>
+        <ganhou>4</ganhou>
+        <perdeu>0</perdeu>
+        <trofeus>0</trofeus>
+    </dados>
+</usuarios>
